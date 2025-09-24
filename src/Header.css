@@ -1,0 +1,172 @@
+/* Navbar */
+.navbar {
+  background-color: #8ecae6;
+  margin: 0;
+  padding: 0;
+}
+
+/* Brand */
+#brand {
+  color: beige;
+  background-color: cadetblue;
+  margin-left: 5px;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#brand:hover {
+  color: cadetblue;
+  background-color: beige;
+}
+
+/* Nav Links */
+.navbar .nav-link {
+  color: white;
+  background-color: crimson;
+  border-radius: 20px;
+  margin: 5px;
+  text-align: center;
+  padding: 8px 12px;
+  transition: 0.3s ease;
+  font-weight: 500;
+}
+
+.nav-link:hover {
+  background-color: white;
+  color: crimson !important;
+}
+
+/* List Button */
+#list {
+  background-color: #023047;
+  border-radius: 20px;
+  padding: 8px 12px;
+  color: white;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+#list:hover {
+  background-color: white;
+  color: #023047;
+  border: 1px solid #023047;
+}
+
+/* Auth Buttons */
+#login,
+#signup {
+  border-radius: 20px;
+  margin: 5px;
+  text-align: center;
+  padding: 8px 12px;
+  transition: 0.3s ease;
+  font-weight: 500;
+}
+
+#login:hover {
+  background-color: white;
+  color: green;
+}
+
+#signup:hover {
+  background-color: white;
+  color: red;
+}
+
+/* Icon */
+.bx {
+  border: none;
+  color: white;
+}
+
+/* User Dropdown Container */
+.user-dropdown {
+  position: relative;
+}
+
+/* User Dropdown Menu */
+.user-dropdown .dropdown-menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  left: auto;
+  z-index: 1050;
+  max-width: 250px;
+  min-width: 180px;
+  max-height: 220px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  white-space: normal;
+  word-wrap: break-word;
+  padding: 0.5rem 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  background-color: white;
+}
+
+/* Dropdown items */
+.user-dropdown .dropdown-menu li {
+  padding: 10px 15px;
+  font-size: 14px;
+  word-break: break-word;
+}
+
+.user-dropdown .dropdown-item {
+  padding: 8px 16px;
+  font-size: 14px;
+  overflow-wrap: break-word;
+  white-space: normal;
+}
+
+/* Mobile: Login/Signup Buttons */
+.auth-buttons {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 576px) {
+  .auth-buttons {
+    width: 100%;
+    justify-content: center;
+  }
+
+  #login,
+  #signup {
+    width: 48%;
+    margin: 5px 1%;
+  }
+
+  #brand {
+    font-size: small;
+  }
+}
+
+/* Mobile: Center user controls */
+@media (max-width: 768px) {
+  .user-controls {
+    justify-content: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .user-dropdown .dropdown-menu {
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    right: auto !important;
+    top: 100% !important;
+    min-width: 200px;
+    max-width: 90vw;
+    border-radius: 10px;
+    overflow-wrap: break-word;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+
+  .user-dropdown {
+    width: 100%;
+    text-align: center;
+  }
+}
